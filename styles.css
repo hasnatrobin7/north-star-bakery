@@ -1,0 +1,260 @@
+/* North Star Bakery
+   Colors: cream #FBF6EF, brown #6B3E26, wheat #C4A484, charcoal #2C2416
+   Fonts: Georgia for headings, Verdana for body text
+*/
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background-color: #FBF6EF;
+  color: #2C2416;
+  font-family: Verdana, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #6B3E26;
+  padding: 1rem;
+}
+
+header img {
+  width: 140px;
+  height: auto;
+  background-color: #FBF6EF;
+  padding: 0.45rem;
+  border-radius: 8px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  color: #FBF6EF;
+  background-color: #6B3E26;
+  border: 2px solid #C4A484;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.65rem 1rem;
+}
+
+nav a:hover,
+nav a:focus,
+nav a[aria-current="page"] {
+  background-color: #C4A484;
+  color: #2C2416;
+}
+
+main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.5rem;
+}
+
+h1,
+h2,
+legend {
+  font-family: Georgia, serif;
+  color: #6B3E26;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0.25rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+  border-top: 3px solid #C4A484;
+  padding-top: 0.6rem;
+}
+
+img,
+picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.product-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.product-group {
+  border: 2px solid #C4A484;
+  padding: 0.25rem 1rem 1rem;
+}
+
+.product-group h2 {
+  border-top: none;
+  margin-top: 0.6rem;
+}
+
+audio {
+  width: 100%;
+}
+
+form p,
+.product-group p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+input,
+select,
+textarea {
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  color: #2C2416;
+  background-color: #FBF6EF;
+  border: 2px solid #6B3E26;
+  padding: 0.5rem;
+}
+
+button {
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FBF6EF;
+  background-color: #6B3E26;
+  border: 2px solid #6B3E26;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #C4A484;
+  color: #2C2416;
+  border-color: #6B3E26;
+}
+
+fieldset {
+  border: 2px solid #C4A484;
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem 1rem;
+}
+
+legend {
+  padding: 0 0.4rem;
+  font-weight: bold;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #6B3E26;
+  outline-offset: 2px;
+}
+
+footer {
+  background-color: #6B3E26;
+  color: #FBF6EF;
+  text-align: center;
+  padding: 1.25rem 1rem 1.5rem;
+}
+
+footer a {
+  color: #FBF6EF;
+}
+
+@media (min-width: 800px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  header img {
+    width: 170px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: auto;
+  }
+
+  main {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .product-groups {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .product-group {
+    flex: 1;
+  }
+}
+
+.saved-banner {
+  margin: 0;
+  background-color: #C4A484;
+  color: #2C2416;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.55rem 1rem;
+}
+
+#pickup-list {
+  border: 2px solid #6B3E26;
+  padding: 0.25rem 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.save-button.is-saved {
+  background-color: #C4A484;
+  color: #2C2416;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+.field-error {
+  color: #2C2416;
+  background-color: #C4A484;
+  font-weight: bold;
+  padding: 0.35rem 0.5rem;
+}
+
+.form-success {
+  background-color: #C4A484;
+  color: #2C2416;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+}

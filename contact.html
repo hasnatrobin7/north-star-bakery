@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="media/bakery-logo_c.png" alt="North Star Bakery logo showing a brown loaf and a wheat sprig">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p id="saved-banner" class="saved-banner" hidden></p>
+
+  <main>
+    <h1>Contact and Pre Orders</h1>
+    <p>Send a pre order or a general question. We will reply by email. This form does not take payment.</p>
+
+    <h2>Visit the Bakery</h2>
+    <p>418 Maple Street, Minneapolis, Minnesota</p>
+    <p>Open Tuesday through Sunday, 7:00 a.m. to 3:00 p.m. Closed Monday.</p>
+
+    <h2>Inquiry and Pre Order Form</h2>
+    <form id="request-form" action="contact.html" method="post" novalidate>
+      <fieldset>
+        <legend>Your information</legend>
+        <p>
+          <label for="customer-name">Name</label>
+          <input type="text" id="customer-name" name="customer-name" required pattern="[A-Za-z][A-Za-z '\-]{1,}" title="Enter your name using letters.">
+          <span class="field-error" id="name-error" role="alert"></span>
+        </p>
+        <p>
+          <label for="customer-email">Email</label>
+          <input type="email" id="customer-email" name="customer-email" required>
+          <span class="field-error" id="email-error" role="alert"></span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Request details</legend>
+        <p>
+          <label for="pickup-date">Pickup date</label>
+          <input type="date" id="pickup-date" name="pickup-date" required>
+          <span class="field-error" id="date-error" role="alert"></span>
+        </p>
+        <p>
+          <label for="request-type">Request type</label>
+          <select id="request-type" name="request-type" required>
+            <option value="">Choose one</option>
+            <option value="pre-order">Pre order</option>
+            <option value="general-question">General question</option>
+          </select>
+          <span class="field-error" id="type-error" role="alert"></span>
+        </p>
+        <p>
+          <label for="item-details">Item details</label>
+          <textarea id="item-details" name="item-details" required rows="4" cols="40"></textarea>
+          <span class="field-error" id="details-error" role="alert"></span>
+        </p>
+        <p>
+          <label for="allergy-notes">Allergy notes, if applicable</label>
+          <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="40"></textarea>
+        </p>
+      </fieldset>
+
+      <p id="form-success" class="form-success" hidden>Your request is ready. The bakery will reply by email. This page does not take payment.</p>
+      <p>
+        <button type="submit">Send request</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>North Star Bakery, 418 Maple Street, Minneapolis, Minnesota</p>
+    <p>Tuesday through Sunday, 7:00 a.m. to 3:00 p.m.</p>
+    <p><a href="index.html">Back to the home page</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

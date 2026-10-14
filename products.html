@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="media/bakery-logo_c.png" alt="North Star Bakery logo showing a brown loaf and a wheat sprig">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p id="saved-banner" class="saved-banner" hidden></p>
+
+  <main>
+    <h1>Our Products</h1>
+    <p>We sell breads, pastries, and cakes at the counter. There is no online checkout. Save the groups you want held, then use the contact page to send the pre order.</p>
+
+    <section id="pickup-list" aria-live="polite">
+      <h2>Saved for pickup</h2>
+      <p id="pickup-empty">You have not saved any items yet. Choose a group below, and this list will still be here when you come back.</p>
+      <ul id="pickup-items"></ul>
+      <button type="button" id="clear-saved" hidden>Clear saved items</button>
+    </section>
+
+    <div class="product-groups">
+      <section class="product-group">
+        <h2>Breads</h2>
+        <p>Country loaves, sandwich bread, and rolls are baked before we open. Most loaves cost $6 to $12. The Signature Loaf is the one neighbors ask for by name.</p>
+        <button type="button" class="save-button" data-product-id="breads">Save breads for pickup</button>
+      </section>
+
+      <section class="product-group">
+        <h2>Pastries</h2>
+        <p>Morning buns, cookies, and other small pastries are sold by the piece, usually $3 to $6. The case is fullest early in the day and thins out after lunch.</p>
+        <button type="button" class="save-button" data-product-id="pastries">Save pastries for pickup</button>
+      </section>
+
+      <section class="product-group">
+        <h2>Cakes</h2>
+        <p>Celebration cakes are made to order for birthdays and small gatherings. Prices usually fall between $28 and $60, depending on size. Tell us the date, the size, and any allergy notes when you write.</p>
+        <button type="button" class="save-button" data-product-id="cakes">Save cakes for pickup</button>
+      </section>
+    </div>
+
+    <img src="media/bakery-bread_c.png" alt="Assorted crusty loaves and sliced bread arranged in the bakery display case">
+
+    <h2>Pricing</h2>
+    <p>These are counter prices, not an online store. We do not take payment on this website. Ask at the counter, or send a pre order request and we will confirm what we can hold for you.</p>
+  </main>
+
+  <footer>
+    <p>North Star Bakery, 418 Maple Street, Minneapolis, Minnesota</p>
+    <p>Tuesday through Sunday, 7:00 a.m. to 3:00 p.m.</p>
+    <p><a href="contact.html">Send a pre order or question</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
